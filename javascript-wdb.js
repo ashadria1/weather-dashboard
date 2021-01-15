@@ -7,6 +7,9 @@ $(document).ready(function () {
   let queryurl = "";
   let url = "";
   let cities = [];
+  let citiesDiv = document.getElementById(
+    "previously_searched_cities_container"
+  );
   initialize();
   searchedClick();
   searchClick();
@@ -17,7 +20,7 @@ $(document).ready(function () {
     if (saved_cities !== null) {
       cities = saved_cities;
     }
-    showButtons();
+    displayButtons();
   }
 
   //This function sets a localStorage item to the cities array so that each city is added to the search history.  It is called by searchClick function every time the Search button is clicked.
@@ -68,6 +71,24 @@ $(document).ready(function () {
       storeCities();
       displayButtons();
     });
+  }
+
+  function callAPIs() {
+    APIkey = "6c7d13d4888aa48d1e078ce5e79c0354";
+    weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}&units=imperial`;
+    forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIkey}&units=imperial`;
+
+    $.ajax({
+      url:  weatherUrl,
+      method: "GET",
+    }).then(function (response) {
+      $("#today_temp").text(response.main.temp); 
+      $("#today_humidity").text(response.main.humidity); 
+      console.log(response);
+    })
+
+    
+
   }
   // */
   //add button for clearing past results?
