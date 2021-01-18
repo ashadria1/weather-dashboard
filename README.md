@@ -10,7 +10,7 @@ I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
 
-![Weather Dashboard Screenshot](Assets\WeatherDashboardScreenshot.PNG "Weather Dashboard Screenshot")
+![Weather Dashboard Screenshot](Assets/WeatherDashboardScreenshot.PNG?raw=true "Weather Dashboard Screenshot")
 
 ## Review
 
