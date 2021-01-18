@@ -9,13 +9,16 @@ AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 ```
-![weather dashboard demo](./Assets/06-server-side-apis-homework-demo.png)
+![Weather Dashboard Screenshot](./Assets\WeatherDashboardScreenshot.PNG)
 
 ## Review
 
-You are required to submit the following for review:
+* The URL of the deployed application:
 
-* The URL of the deployed application.
+https://ashadria1.github.io/weather-dashboard/
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+
+* The URL of the GitHub repository:
+
+https://github.com/ashadria1/weather-dashboard
 
